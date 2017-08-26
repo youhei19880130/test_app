@@ -36,6 +36,7 @@
 		1793424E1F50934E005EC910 /* MagazineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793424D1F50934E005EC910 /* MagazineViewController.swift */; };
 		179342501F5093E8005EC910 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793424F1F5093E8005EC910 /* EventViewController.swift */; };
 		179342521F509404005EC910 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179342511F509404005EC910 /* ItemViewController.swift */; };
+		17B619FD1F514B8C004CA2FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B619FC1F514B8C004CA2FD /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -102,6 +103,7 @@
 		1793424D1F50934E005EC910 /* MagazineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineViewController.swift; sourceTree = "<group>"; };
 		1793424F1F5093E8005EC910 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		179342511F509404005EC910 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		17B619FC1F514B8C004CA2FD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				174F17391F506A4D00382C2B /* images */,
 				174F170B1F50651B00382C2B /* AppDelegate.swift */,
 				174F170D1F50651B00382C2B /* TopViewController.swift */,
+				17B619FC1F514B8C004CA2FD /* ViewController.swift */,
 				174F170F1F50651B00382C2B /* Main.storyboard */,
 				174F17591F507BEA00382C2B /* AboutViewController.swift */,
 				1793424F1F5093E8005EC910 /* EventViewController.swift */,
@@ -367,6 +370,7 @@
 				174F175A1F507BEA00382C2B /* AboutViewController.swift in Sources */,
 				174F170E1F50651B00382C2B /* TopViewController.swift in Sources */,
 				1793424E1F50934E005EC910 /* MagazineViewController.swift in Sources */,
+				17B619FD1F514B8C004CA2FD /* ViewController.swift in Sources */,
 				174F170C1F50651B00382C2B /* AppDelegate.swift in Sources */,
 				179342521F509404005EC910 /* ItemViewController.swift in Sources */,
 			);
