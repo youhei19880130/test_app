@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053CBBD01F594256006E254A /* EyeCatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CBBCF1F594256006E254A /* EyeCatchViewController.swift */; };
+		05682A371F598E7A0025DB33 /* MagazineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */; };
+		05682A391F5995CF0025DB33 /* MagazineDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */; };
+		05682A3B1F59AFC00025DB33 /* ItemDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */; };
+		05682A3D1F59AFE20025DB33 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */; };
+		05682A3F1F59B6BB0025DB33 /* ItemDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */; };
+		05682A411F5A3B680025DB33 /* ItemDetailPageView1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */; };
+		05682A431F5A3B820025DB33 /* ItemDetailPageView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */; };
+		05682A451F5A3B940025DB33 /* ItemDetailPageView3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */; };
 		174F170C1F50651B00382C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F170B1F50651B00382C2B /* AppDelegate.swift */; };
 		174F170E1F50651B00382C2B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F170D1F50651B00382C2B /* TopViewController.swift */; };
 		174F17111F50651B00382C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174F170F1F50651B00382C2B /* Main.storyboard */; };
@@ -37,6 +46,9 @@
 		179342501F5093E8005EC910 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1793424F1F5093E8005EC910 /* EventViewController.swift */; };
 		179342521F509404005EC910 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179342511F509404005EC910 /* ItemViewController.swift */; };
 		17B619FD1F514B8C004CA2FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B619FC1F514B8C004CA2FD /* ViewController.swift */; };
+		18FABFF62945DBA83F3F5302 /* Pods_ChalieVice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CA7F109FD3B23E9848E72A /* Pods_ChalieVice.framework */; };
+		232920292F251804E0E856D6 /* Pods_ChalieViceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A26284451505DFF2E09BD58 /* Pods_ChalieViceUITests.framework */; };
+		A6FD20B7C2F920BC5892106A /* Pods_ChalieViceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA29281752B2937389DE66C /* Pods_ChalieViceTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -68,6 +80,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053CBBCF1F594256006E254A /* EyeCatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeCatchViewController.swift; sourceTree = "<group>"; };
+		05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailViewController.swift; sourceTree = "<group>"; };
+		05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailPopupViewController.swift; sourceTree = "<group>"; };
+		05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPopupViewController.swift; sourceTree = "<group>"; };
+		05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageViewController.swift; sourceTree = "<group>"; };
+		05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView1Controller.swift; sourceTree = "<group>"; };
+		05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView2Controller.swift; sourceTree = "<group>"; };
+		05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView3Controller.swift; sourceTree = "<group>"; };
+		056CE948B196FC311CE4EA49 /* Pods-ChalieVice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieVice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice.debug.xcconfig"; sourceTree = "<group>"; };
+		11CA7F109FD3B23E9848E72A /* Pods_ChalieVice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChalieVice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F17081F50651B00382C2B /* ChalieVice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChalieVice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174F170B1F50651B00382C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174F170D1F50651B00382C2B /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +127,13 @@
 		1793424F1F5093E8005EC910 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		179342511F509404005EC910 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		17B619FC1F514B8C004CA2FD /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A26284451505DFF2E09BD58 /* Pods_ChalieViceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChalieViceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA29281752B2937389DE66C /* Pods_ChalieViceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChalieViceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		662A956487BA464AE7E57C57 /* Pods-ChalieViceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieViceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieViceUITests/Pods-ChalieViceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		69B15C74E236CF28FFFF0AA0 /* Pods-ChalieVice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieVice.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice.release.xcconfig"; sourceTree = "<group>"; };
+		72FCF93E7893296C1347430E /* Pods-ChalieViceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieViceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieViceTests/Pods-ChalieViceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC63D7B8430093AAF390AE45 /* Pods-ChalieViceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieViceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieViceUITests/Pods-ChalieViceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B658FE0187A741A08B145FF2 /* Pods-ChalieViceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieViceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieViceTests/Pods-ChalieViceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FABFF62945DBA83F3F5302 /* Pods_ChalieVice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6FD20B7C2F920BC5892106A /* Pods_ChalieViceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232920292F251804E0E856D6 /* Pods_ChalieViceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +171,8 @@
 				174F171F1F50651B00382C2B /* ChalieViceTests */,
 				174F172A1F50651B00382C2B /* ChalieViceUITests */,
 				174F17091F50651B00382C2B /* Products */,
+				C8749F40AC5E5B825A05C509 /* Pods */,
+				2DABE958C319E9934B4837BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,14 +191,23 @@
 			children = (
 				174F17391F506A4D00382C2B /* images */,
 				174F170B1F50651B00382C2B /* AppDelegate.swift */,
+				053CBBCF1F594256006E254A /* EyeCatchViewController.swift */,
 				174F170D1F50651B00382C2B /* TopViewController.swift */,
 				17B619FC1F514B8C004CA2FD /* ViewController.swift */,
-				174F170F1F50651B00382C2B /* Main.storyboard */,
 				174F17591F507BEA00382C2B /* AboutViewController.swift */,
 				1793424F1F5093E8005EC910 /* EventViewController.swift */,
 				179342511F509404005EC910 /* ItemViewController.swift */,
+				05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */,
+				05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */,
+				05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */,
+				05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */,
+				05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */,
+				05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */,
 				1793424D1F50934E005EC910 /* MagazineViewController.swift */,
+				05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */,
+				05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */,
 				174F17121F50651B00382C2B /* Assets.xcassets */,
+				174F170F1F50651B00382C2B /* Main.storyboard */,
 				174F17141F50651B00382C2B /* LaunchScreen.storyboard */,
 				174F17171F50651B00382C2B /* Info.plist */,
 			);
@@ -213,6 +257,29 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		2DABE958C319E9934B4837BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11CA7F109FD3B23E9848E72A /* Pods_ChalieVice.framework */,
+				2AA29281752B2937389DE66C /* Pods_ChalieViceTests.framework */,
+				1A26284451505DFF2E09BD58 /* Pods_ChalieViceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8749F40AC5E5B825A05C509 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056CE948B196FC311CE4EA49 /* Pods-ChalieVice.debug.xcconfig */,
+				69B15C74E236CF28FFFF0AA0 /* Pods-ChalieVice.release.xcconfig */,
+				72FCF93E7893296C1347430E /* Pods-ChalieViceTests.debug.xcconfig */,
+				B658FE0187A741A08B145FF2 /* Pods-ChalieViceTests.release.xcconfig */,
+				662A956487BA464AE7E57C57 /* Pods-ChalieViceUITests.debug.xcconfig */,
+				AC63D7B8430093AAF390AE45 /* Pods-ChalieViceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174F17301F50651B00382C2B /* Build configuration list for PBXNativeTarget "ChalieVice" */;
 			buildPhases = (
+				0009C85E47244F9DA2298EEC /* [CP] Check Pods Manifest.lock */,
 				174F17041F50651B00382C2B /* Sources */,
 				174F17051F50651B00382C2B /* Frameworks */,
 				174F17061F50651B00382C2B /* Resources */,
+				C54A6FE41613A9D1C39D5F2C /* [CP] Embed Pods Frameworks */,
+				A570CEEFFA4BF48DE89D0CB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 				174F17561F506BD700382C2B /* PBXBuildRule */,
@@ -238,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174F17331F50651B00382C2B /* Build configuration list for PBXNativeTarget "ChalieViceTests" */;
 			buildPhases = (
+				D625A8FA36BBBCE8A42D8E04 /* [CP] Check Pods Manifest.lock */,
 				174F17181F50651B00382C2B /* Sources */,
 				174F17191F50651B00382C2B /* Frameworks */,
 				174F171A1F50651B00382C2B /* Resources */,
+				D48AAAF4ED3D43F038AA42A9 /* [CP] Embed Pods Frameworks */,
+				707A548E72CB9B86116A6761 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,9 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174F17361F50651B00382C2B /* Build configuration list for PBXNativeTarget "ChalieViceUITests" */;
 			buildPhases = (
+				5D6CED5D36EDA7D251DD0194 /* [CP] Check Pods Manifest.lock */,
 				174F17231F50651B00382C2B /* Sources */,
 				174F17241F50651B00382C2B /* Frameworks */,
 				174F17251F50651B00382C2B /* Resources */,
+				159F6415A4BFC21EDAC29000 /* [CP] Embed Pods Frameworks */,
+				F0D5B18D179A0FD5C3DAF05F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,17 +437,176 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0009C85E47244F9DA2298EEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChalieVice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		159F6415A4BFC21EDAC29000 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieViceUITests/Pods-ChalieViceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D6CED5D36EDA7D251DD0194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChalieViceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		707A548E72CB9B86116A6761 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieViceTests/Pods-ChalieViceTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A570CEEFFA4BF48DE89D0CB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54A6FE41613A9D1C39D5F2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48AAAF4ED3D43F038AA42A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieViceTests/Pods-ChalieViceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D625A8FA36BBBCE8A42D8E04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChalieViceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D5B18D179A0FD5C3DAF05F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChalieViceUITests/Pods-ChalieViceUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		174F17041F50651B00382C2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				179342501F5093E8005EC910 /* EventViewController.swift in Sources */,
+				05682A411F5A3B680025DB33 /* ItemDetailPageView1Controller.swift in Sources */,
 				174F175A1F507BEA00382C2B /* AboutViewController.swift in Sources */,
+				05682A3D1F59AFE20025DB33 /* ItemDetailViewController.swift in Sources */,
 				174F170E1F50651B00382C2B /* TopViewController.swift in Sources */,
 				1793424E1F50934E005EC910 /* MagazineViewController.swift in Sources */,
+				05682A391F5995CF0025DB33 /* MagazineDetailPopupViewController.swift in Sources */,
+				05682A451F5A3B940025DB33 /* ItemDetailPageView3Controller.swift in Sources */,
 				17B619FD1F514B8C004CA2FD /* ViewController.swift in Sources */,
+				053CBBD01F594256006E254A /* EyeCatchViewController.swift in Sources */,
+				05682A3B1F59AFC00025DB33 /* ItemDetailPopupViewController.swift in Sources */,
 				174F170C1F50651B00382C2B /* AppDelegate.swift in Sources */,
+				05682A431F5A3B820025DB33 /* ItemDetailPageView2Controller.swift in Sources */,
+				05682A371F598E7A0025DB33 /* MagazineDetailViewController.swift in Sources */,
+				05682A3F1F59B6BB0025DB33 /* ItemDetailPageViewController.swift in Sources */,
 				179342521F509404005EC910 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +759,7 @@
 		};
 		174F17311F50651B00382C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056CE948B196FC311CE4EA49 /* Pods-ChalieVice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChalieVice/Info.plist;
@@ -536,6 +772,7 @@
 		};
 		174F17321F50651B00382C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69B15C74E236CF28FFFF0AA0 /* Pods-ChalieVice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ChalieVice/Info.plist;
@@ -548,6 +785,7 @@
 		};
 		174F17341F50651B00382C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72FCF93E7893296C1347430E /* Pods-ChalieViceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +800,7 @@
 		};
 		174F17351F50651B00382C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B658FE0187A741A08B145FF2 /* Pods-ChalieViceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +815,7 @@
 		};
 		174F17371F50651B00382C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662A956487BA464AE7E57C57 /* Pods-ChalieViceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ChalieViceUITests/Info.plist;
@@ -589,6 +829,7 @@
 		};
 		174F17381F50651B00382C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC63D7B8430093AAF390AE45 /* Pods-ChalieViceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ChalieViceUITests/Info.plist;

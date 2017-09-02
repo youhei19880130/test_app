@@ -8,18 +8,43 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+class TopViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+  override func viewDidLoad() {
+      super.viewDidLoad()
+      // Do any additional setup after loading the view, typically from a nib.
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
+  }
 
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    
+    let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+
+    // Cell view parts
+    let typeLabel: UILabel = cell.contentView.viewWithTag(1) as! UILabel
+    let imageView: UIImageView = cell.contentView.viewWithTag(2) as! UIImageView
+    let descLabel: UILabel = cell.contentView.viewWithTag(3) as! UILabel
+    
+    imageView.image = try! UIImage(data: Data(contentsOf: URL(string: "http://img.chalievice.com/system/magazine_images/images/000/000/004/245/MM_image.jpg?1488280230")!))
+ 
+    typeLabel.text = "aaaaaa"
+    descLabel.text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    
+    return cell
+  }
+
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
+  }
+
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 10;
+  }
 
 }
 
