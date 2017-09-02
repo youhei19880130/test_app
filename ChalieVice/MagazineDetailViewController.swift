@@ -23,7 +23,7 @@ class MagazineDetailViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  @IBAction func shoDetail() {
+  @IBAction func showDetail() {
     performSegue(withIdentifier: "showMagazineDetailPopup", sender: nil)
   }
   

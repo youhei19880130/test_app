@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import QRCode
 
 class MagazineDetailPopupViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  @IBOutlet var qrCodeView: UIImageView?
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
+    // String
+    var qrCode = QRCode("http://schuch.me")
+    qrCode?.size = CGSize(width: 202, height: 202)
+    qrCodeView?.image = qrCode?.image
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
 }
