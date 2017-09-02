@@ -10,15 +10,19 @@ import UIKit
 
 class AboutViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
+  @IBOutlet weak var webView: UIWebView!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    webView.scrollView.isScrollEnabled = false;
+    webView.scrollView.bounces = false;
+    webView.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/NdzCaLOREnY")!))
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
 }

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ItemDetailPageViewController: UIPageViewController {
+  
+  public var jsonData: JSON?
   
   private var vcs: [UIViewController]?
   private var vcsIndex = 0

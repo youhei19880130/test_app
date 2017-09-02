@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ItemDetailViewController: UIViewController {
 
+  public var jsonData: JSON?
+  @IBOutlet weak var nameLabel: UILabel!
+  @IBOutlet weak var priceLabel: UILabel!
+  @IBOutlet weak var imageView: UIImageView!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    nameLabel.text = jsonData!["name"].stringValue
+    priceLabel.text = jsonData!["price"].stringValue
+    
+    let vc: ItemDetailPageViewController = storyboard!.instantiateViewController(withIdentifier: "ItemDetailPageViewController") as! ItemDetailPageViewController
+    vc.jsonData = jsonData
   }
   
   override func didReceiveMemoryWarning() {
