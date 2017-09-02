@@ -37,6 +37,11 @@ class ItemDetailPageViewController: UIPageViewController {
       vc3 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView3") as! ItemDetailPageView3Controller
       vc3.parentVC = self
       vcs?.append(vc3)
+      
+      let vc4: ItemDetailPageView4Controller
+      vc4 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView4") as! ItemDetailPageView4Controller
+      vc4.parentVC = self
+      vcs?.append(vc4)
     }
     return vcs![0]
   }

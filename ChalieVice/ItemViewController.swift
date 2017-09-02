@@ -62,7 +62,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
   }
   
-  @IBAction func unwindToMagazines(segue: UIStoryboardSegue) {
+  @IBAction func unwindToItems(segue: UIStoryboardSegue) {
   }
 
 }

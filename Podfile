@@ -9,7 +9,6 @@ target 'ChalieVice' do
   pod "QRCode"
   pod 'Alamofire', '~> 4.4'
 
-
   target 'ChalieViceTests' do
     inherit! :search_paths
     # Pods for testing
