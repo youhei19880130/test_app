@@ -60,7 +60,13 @@ class TopViewController: UIViewController, UICollectionViewDataSource, UICollect
       }
     }
     
-    typeLabel.text = jsonData?[index]["category_name"].stringValue
+    if jsonData?[index]["category_name"].stringValue == "FROM CHALIE" {
+      typeLabel.text = "EVENT"
+    } else if jsonData?[index]["category_name"].stringValue == "FROM FRIENDS" {
+      typeLabel.text = "MAGAZINE"
+    } else {
+      typeLabel.text = "ITEM"
+    }
     let description = jsonData?[index]["name"].stringValue
     let endIndex = (description?.characters.count)! > 20 ? 20 : description?.characters.count
     descLabel.text = description?.substring(to: (description?.index((description?.startIndex)!, offsetBy: endIndex!))!)
