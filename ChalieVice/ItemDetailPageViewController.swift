@@ -28,13 +28,18 @@ class ItemDetailPageViewController: UIPageViewController {
       vc.parentVC = self
       vc.jsonDetailData = jsonDetailData
       vc.imageUrl = imageUrl.stringValue
+      /*
       switch vcIndex {
       case 0:
         vc.prevButton?.isHidden = true
-        vc.prevButton?.isHidden = false
+        vc.nextButton?.isHidden = false
       default:
         vc.prevButton?.isHidden = false
-        vc.prevButton?.isHidden = false
+        vc.nextButton?.isHidden = false
+      }
+      */
+      if vcIndex == 0 {
+        vc.prevButton?.removeFromSuperview()
       }
       vcs?.append(vc)
       vcIndex += 1
@@ -42,9 +47,15 @@ class ItemDetailPageViewController: UIPageViewController {
     
     let youtubeUrl: String = jsonDetailData!["youtube_url"].stringValue
     if youtubeUrl == "" {
-      (vcs?[(vcs?.count)! - 1] as! ItemDetailImagePageViewController).nextButton?.isHidden = true
+      // (vcs?[(vcs?.count)! - 1] as! ItemDetailImagePageViewController).nextButton?.isHidden = true
+      (vcs?[(vcs?.count)! - 1] as! ItemDetailImagePageViewController).nextButton?.removeFromSuperview()
     } else {
-      
+      let vc: ItemDetailYoutubePageViewController = storyboard!.instantiateViewController(withIdentifier: "ItemDetailYoutubePageViewController") as! ItemDetailYoutubePageViewController
+      vc.parentVC = self
+      vc.jsonDetailData = jsonDetailData
+      vc.youtubeUrl = youtubeUrl
+      vcs?.append(vc)
+      vcIndex += 1
     }
     
     self.setViewControllers([(vcs?[0])!], direction: .forward, animated: true, completion: nil)

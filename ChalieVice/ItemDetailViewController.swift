@@ -14,6 +14,7 @@ var MyObservationContext = 0
 
 class ItemDetailViewController: UIViewController, UIPopoverPresentationControllerDelegate {
   
+  public var jsonData: JSON?
   public var jsonDetailData: JSON?
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var priceLabel: UILabel!
@@ -54,20 +55,17 @@ class ItemDetailViewController: UIViewController, UIPopoverPresentationControlle
     }
     
     let htmlString: String = "<style>* {font-family: \"ヒラギノ明朝 ProN W6\"!important }</style>"
-    let desc: String = "<h3>説明</h3>" + jsonDetailData!["description"].stringValue
+    let desc: String = "<br><h3>説明</h3>" + jsonDetailData!["description"].stringValue
     let detail: String = "<br><h3>詳細情報</h3>" + jsonDetailData!["detail"].stringValue
     webView.loadHTMLString(htmlString + desc + detail, baseURL: nil)
     webView.scrollView.isScrollEnabled = false
     
-    let vc: ItemDetailPageViewController = storyboard!.instantiateViewController(withIdentifier: "ItemDetailPageViewController") as! ItemDetailPageViewController
-    vc.jsonDetailData = jsonDetailData
   }
   
   func getItem() {
     var keepAlive = true
     
-    print("https://chalie-vice-api.herokuapp.com/chalie_vice/items/" + (jsonDetailData?["id"].stringValue)! + ".json")
-    Alamofire.request("https://chalie-vice-api.herokuapp.com/chalie_vice/items/" + (jsonDetailData?["id"].stringValue)! + ".json")
+    Alamofire.request("https://chalie-vice-api.herokuapp.com/chalie_vice/items/" + (jsonData?["id"].stringValue)! + ".json")
       .responseJSON { response in
         guard let object = response.result.value else {
           return
@@ -102,6 +100,11 @@ class ItemDetailViewController: UIViewController, UIPopoverPresentationControlle
         darkBackground.alpha = 0.5
         (segue.destination as! ItemDetailPopupViewController).jsonDetailData = jsonDetailData
       }
+    } else if segue.identifier == "embededPageView" {
+      if jsonDetailData == nil {
+        getItem()
+      }
+      (segue.destination as! ItemDetailPageViewController).jsonDetailData = jsonDetailData
     }
   }
   

@@ -803,7 +803,7 @@
                                             <constraint firstAttribute="height" constant="300" id="cYr-2J-apX"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="mzM-iv-vfb" kind="embed" id="TFH-zj-AqN"/>
+                                            <segue destination="mzM-iv-vfb" kind="embed" identifier="embededPageView" id="TFH-zj-AqN"/>
                                         </connections>
                                     </containerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xse-re-ZmX">
@@ -974,7 +974,6 @@
                                 <state key="normal" image="button_left"/>
                                 <connections>
                                     <action selector="prev" destination="1xI-9W-bwg" eventType="touchUpInside" id="vAU-Pe-foo"/>
-                                    <action selector="prev" destination="uaA-rS-V1Y" eventType="touchUpInside" id="yKF-zc-uCZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1002,61 +1001,10 @@
             </objects>
             <point key="canvasLocation" x="1959" y="-2752"/>
         </scene>
-        <!--Item Detail Page View2 Controller-->
-        <scene sceneID="Myi-SW-lmU">
-            <objects>
-                <viewController storyboardIdentifier="DetailPageView2" id="uaA-rS-V1Y" customClass="ItemDetailPageView2Controller" customModule="ChalieVice" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hHs-yw-QnU"/>
-                        <viewControllerLayoutGuide type="bottom" id="q2a-CG-1KN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UeJ-mO-Ogb">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="400"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBH-c7-SxT">
-                                <rect key="frame" x="20" y="28" width="10" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pB-Jl-Rkb">
-                                <rect key="frame" x="20" y="174" width="52" height="52"/>
-                                <state key="normal" image="button_left"/>
-                                <connections>
-                                    <action selector="prev" destination="uaA-rS-V1Y" eventType="touchUpInside" id="bkw-ga-jFY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLZ-0S-G3K">
-                                <rect key="frame" x="952" y="174" width="52" height="52"/>
-                                <state key="normal" image="button_right"/>
-                                <connections>
-                                    <action selector="next" destination="uaA-rS-V1Y" eventType="touchUpInside" id="Ss3-1V-sIp"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2pB-Jl-Rkb" firstAttribute="centerY" secondItem="UeJ-mO-Ogb" secondAttribute="centerY" id="lnk-Ap-eve"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KLZ-0S-G3K" secondAttribute="trailing" id="sUs-YY-w18"/>
-                            <constraint firstItem="KLZ-0S-G3K" firstAttribute="centerY" secondItem="UeJ-mO-Ogb" secondAttribute="centerY" id="y54-0y-Z5G"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="2pB-Jl-Rkb" secondAttribute="leading" id="yid-mt-1hm"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="1024" height="400"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VVE-XC-AYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1959" y="-2362"/>
-        </scene>
-        <!--Item Detail Page View3 Controller-->
+        <!--Item Detail Youtube Page View Controller-->
         <scene sceneID="IHe-js-WAt">
             <objects>
-                <viewController storyboardIdentifier="DetailPageView3" id="tEx-5t-hAu" customClass="ItemDetailPageView3Controller" customModule="ChalieVice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDetailYoutubePageViewController" id="tEx-5t-hAu" customClass="ItemDetailYoutubePageViewController" customModule="ChalieVice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nrJ-hU-ym9"/>
                         <viewControllerLayoutGuide type="bottom" id="2Uk-P9-DIb"/>
@@ -1065,13 +1013,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bku-QA-Lda">
-                                <rect key="frame" x="20" y="28" width="11" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd0-tw-ZL8">
                                 <rect key="frame" x="20" y="174" width="52" height="52"/>
                                 <state key="normal" image="button_left"/>
@@ -1083,7 +1024,6 @@
                                 <rect key="frame" x="952" y="174" width="52" height="52"/>
                                 <state key="normal" image="button_right"/>
                                 <connections>
-                                    <action selector="next" destination="uaA-rS-V1Y" eventType="touchUpInside" id="NSC-do-ZyL"/>
                                     <action selector="next" destination="tEx-5t-hAu" eventType="touchUpInside" id="f67-Ff-HdQ"/>
                                 </connections>
                             </button>
@@ -1116,7 +1056,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d23-Zv-6rT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.7890624999998" y="-1964.0625"/>
+            <point key="canvasLocation" x="1959" y="-2364"/>
         </scene>
         <!--Event View Controller-->
         <scene sceneID="LZE-Ah-gOW">
@@ -1339,13 +1279,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-D7-VHY">
-                                <rect key="frame" x="20" y="28" width="11" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-Fi-CME">
                                 <rect key="frame" x="20" y="174" width="52" height="52"/>
                                 <state key="normal" image="button_left"/>
@@ -1488,7 +1421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDx-F5-Axc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.7890624999998" y="-1555.46875"/>
+            <point key="canvasLocation" x="1959" y="-1943"/>
         </scene>
     </scenes>
     <resources>

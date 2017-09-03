@@ -103,7 +103,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showItemFromList" {
       if let dest = segue.destination as? ItemDetailViewController {
-        dest.jsonDetailData = jsonData?[selectedIndex!]
+        dest.jsonData = jsonData?[selectedIndex!]
       }
     }
   }

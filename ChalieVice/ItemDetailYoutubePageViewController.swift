@@ -13,13 +13,14 @@ class ItemDetailYoutubePageViewController: UIViewController {
 
   public var parentVC: ItemDetailPageViewController?
   public var jsonDetailData: JSON?
+  public var youtubeUrl: String?
   @IBOutlet var videoPlayer: UIWebView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
     videoPlayer.scrollView.isScrollEnabled = false;
     videoPlayer.scrollView.bounces = false;
-    videoPlayer.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/mmIMMWYZfo4")!))
+    videoPlayer.loadRequest(URLRequest(url: URL(string: youtubeUrl!)!))
   }
   
   override func didReceiveMemoryWarning() {
