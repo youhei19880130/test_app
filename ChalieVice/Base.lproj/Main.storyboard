@@ -11,6 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--EyeCatch-->
+        <scene sceneID="zPG-g5-ocJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EyeCatch" id="oSg-ZH-aol" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIa-dE-s7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1176" y="-4785"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="eHJ-h2-F12">
             <objects>

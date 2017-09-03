@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0534742F1F5C35B000800720 /* EyeCactchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534742E1F5C35B000800720 /* EyeCactchViewController.swift */; };
+		053474311F5C361100800720 /* EyeCatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053474301F5C361100800720 /* EyeCatch.storyboard */; };
 		05682A371F598E7A0025DB33 /* MagazineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */; };
 		05682A391F5995CF0025DB33 /* MagazineDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */; };
 		05682A3B1F59AFC00025DB33 /* ItemDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0534742E1F5C35B000800720 /* EyeCactchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeCactchViewController.swift; sourceTree = "<group>"; };
+		053474301F5C361100800720 /* EyeCatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EyeCatch.storyboard; sourceTree = "<group>"; };
 		05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailViewController.swift; sourceTree = "<group>"; };
 		05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailPopupViewController.swift; sourceTree = "<group>"; };
 		05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPopupViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				174F170F1F50651B00382C2B /* Main.storyboard */,
 				174F17141F50651B00382C2B /* LaunchScreen.storyboard */,
 				174F17171F50651B00382C2B /* Info.plist */,
+				053474301F5C361100800720 /* EyeCatch.storyboard */,
+				0534742E1F5C35B000800720 /* EyeCactchViewController.swift */,
 			);
 			path = ChalieVice;
 			sourceTree = "<group>";
@@ -332,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053474311F5C361100800720 /* EyeCatch.storyboard in Resources */,
 				174F17161F50651B00382C2B /* LaunchScreen.storyboard in Resources */,
 				174F17131F50651B00382C2B /* Assets.xcassets in Resources */,
 				174F17111F50651B00382C2B /* Main.storyboard in Resources */,
@@ -513,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0534742F1F5C35B000800720 /* EyeCactchViewController.swift in Sources */,
 				179342501F5093E8005EC910 /* EventViewController.swift in Sources */,
 				05682A411F5A3B680025DB33 /* ItemDetailImagePageViewController.swift in Sources */,
 				174F175A1F507BEA00382C2B /* AboutViewController.swift in Sources */,
