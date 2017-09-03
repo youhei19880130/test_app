@@ -50,13 +50,34 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     let typeLabel: UILabel = cell.contentView.viewWithTag(1) as! UILabel
     let imageView: UIImageView = cell.contentView.viewWithTag(2) as! UIImageView
     let descLabel: UILabel = cell.contentView.viewWithTag(3) as! UILabel
+    let priceLabel: UILabel = cell.contentView.viewWithTag(4) as! UILabel
     
-
-    imageView.image = try! UIImage(data: Data(contentsOf: URL(string: "http://img.chalievice.com/system/magazine_images/images/000/000/004/245/MM_image.jpg?1488280230")!))
+    let imgUrlString: String? = jsonData?[index]["image_url"].stringValue
+    if let url = imgUrlString {
+      if url != "" {
+        imageView.image = try! UIImage(data: Data(contentsOf: URL(string: url)!))
+      }
+    }
     
-    typeLabel.text = "ITEM"
-    let description = jsonData?[index]["description"].stringValue
-    descLabel.text = description?.substring(to: (description?.index((description?.startIndex)!, offsetBy: 20))!)
+    let price: String = (jsonData?[index]["price"].stringValue)!
+    if price != "" {
+      let i = Int(price)
+      let num = NSNumber(value: i!)
+      
+      let formatter = NumberFormatter()
+      formatter.numberStyle = NumberFormatter.Style.decimal
+      formatter.groupingSeparator = ","
+      formatter.groupingSize = 3
+      
+      let result = formatter.string(from: num)
+      
+      priceLabel.text = result! + "円 (税込)"
+    }
+    
+    typeLabel.text = jsonData?[index]["category_name"].stringValue
+    let description = jsonData?[index]["name"].stringValue
+    let endIndex = (description?.characters.count)! > 20 ? 20 : description?.characters.count
+    descLabel.text = description?.substring(to: (description?.index((description?.startIndex)!, offsetBy: endIndex!))!)
     
     return cell
   }
@@ -66,7 +87,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
   }
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return (jsonData?.count)!;
+    return (jsonData?.count)!
   }
   
   private var selectedIndex: Int?
@@ -82,7 +103,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showItemFromList" {
       if let dest = segue.destination as? ItemDetailViewController {
-        dest.jsonData = jsonData?[selectedIndex!]
+        dest.jsonDetailData = jsonData?[selectedIndex!]
       }
     }
   }

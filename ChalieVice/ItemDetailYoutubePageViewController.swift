@@ -1,5 +1,5 @@
 //
-//  ItemDetailPageView2Controller.swift
+//  ItemDetailYoutubePageView3Controller.swift
 //  ChalieVice
 //
 //  Created by nakazumi_hiroyuki on 2017/09/02.
@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ItemDetailPageView2Controller: UIViewController {
-  
+class ItemDetailYoutubePageViewController: UIViewController {
+
   public var parentVC: ItemDetailPageViewController?
+  public var jsonDetailData: JSON?
+  @IBOutlet var videoPlayer: UIWebView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
+    videoPlayer.scrollView.isScrollEnabled = false;
+    videoPlayer.scrollView.bounces = false;
+    videoPlayer.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/mmIMMWYZfo4")!))
   }
   
   override func didReceiveMemoryWarning() {
@@ -30,15 +34,5 @@ class ItemDetailPageView2Controller: UIViewController {
   @IBAction func next() {
     parentVC?.nextPage()
   }
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
 
 }

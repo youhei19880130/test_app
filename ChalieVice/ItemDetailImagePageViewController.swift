@@ -1,5 +1,5 @@
 //
-//  ItemDetailPageView3Controller.swift
+//  ItemDetailImagePageViewController.swift
 //  ChalieVice
 //
 //  Created by nakazumi_hiroyuki on 2017/09/02.
@@ -7,17 +7,26 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-class ItemDetailPageView3Controller: UIViewController {
+class ItemDetailImagePageViewController: UIViewController {
 
+  public var imageUrl: String?
   public var parentVC: ItemDetailPageViewController?
-  @IBOutlet var videoPlayer: UIWebView!
+  public var jsonDetailData: JSON?
+  @IBOutlet weak var imageView: UIImageView!
+  
+  @IBOutlet var prevButton: UIButton?
+  @IBOutlet var nextButton: UIButton?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    videoPlayer.scrollView.isScrollEnabled = false;
-    videoPlayer.scrollView.bounces = false;
-    videoPlayer.loadRequest(URLRequest(url: URL(string: "https://www.youtube.com/embed/mmIMMWYZfo4")!))
+    
+    if let url = imageUrl {
+      if url != "" {
+        imageView.image = try! UIImage(data: Data(contentsOf: URL(string: url)!))
+      }
+    }
   }
   
   override func didReceiveMemoryWarning() {
@@ -32,5 +41,4 @@ class ItemDetailPageView3Controller: UIViewController {
   @IBAction func next() {
     parentVC?.nextPage()
   }
-
 }

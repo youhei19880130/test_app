@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053CBBD01F594256006E254A /* EyeCatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CBBCF1F594256006E254A /* EyeCatchViewController.swift */; };
 		05682A371F598E7A0025DB33 /* MagazineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */; };
 		05682A391F5995CF0025DB33 /* MagazineDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */; };
 		05682A3B1F59AFC00025DB33 /* ItemDetailPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */; };
 		05682A3D1F59AFE20025DB33 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */; };
 		05682A3F1F59B6BB0025DB33 /* ItemDetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */; };
-		05682A411F5A3B680025DB33 /* ItemDetailPageView1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */; };
-		05682A431F5A3B820025DB33 /* ItemDetailPageView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */; };
-		05682A451F5A3B940025DB33 /* ItemDetailPageView3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */; };
+		05682A411F5A3B680025DB33 /* ItemDetailImagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A401F5A3B680025DB33 /* ItemDetailImagePageViewController.swift */; };
+		05682A451F5A3B940025DB33 /* ItemDetailYoutubePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05682A441F5A3B940025DB33 /* ItemDetailYoutubePageViewController.swift */; };
 		058603071F5A592F00ED0AE8 /* ItemDetailPageView4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058603061F5A592F00ED0AE8 /* ItemDetailPageView4Controller.swift */; };
 		174F170C1F50651B00382C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F170B1F50651B00382C2B /* AppDelegate.swift */; };
 		174F170E1F50651B00382C2B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174F170D1F50651B00382C2B /* TopViewController.swift */; };
@@ -63,15 +61,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		053CBBCF1F594256006E254A /* EyeCatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeCatchViewController.swift; sourceTree = "<group>"; };
 		05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailViewController.swift; sourceTree = "<group>"; };
 		05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagazineDetailPopupViewController.swift; sourceTree = "<group>"; };
 		05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPopupViewController.swift; sourceTree = "<group>"; };
 		05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageViewController.swift; sourceTree = "<group>"; };
-		05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView1Controller.swift; sourceTree = "<group>"; };
-		05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView2Controller.swift; sourceTree = "<group>"; };
-		05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView3Controller.swift; sourceTree = "<group>"; };
+		05682A401F5A3B680025DB33 /* ItemDetailImagePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailImagePageViewController.swift; sourceTree = "<group>"; };
+		05682A441F5A3B940025DB33 /* ItemDetailYoutubePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailYoutubePageViewController.swift; sourceTree = "<group>"; };
 		056CE948B196FC311CE4EA49 /* Pods-ChalieVice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChalieVice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChalieVice/Pods-ChalieVice.debug.xcconfig"; sourceTree = "<group>"; };
 		058603061F5A592F00ED0AE8 /* ItemDetailPageView4Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailPageView4Controller.swift; sourceTree = "<group>"; };
 		11CA7F109FD3B23E9848E72A /* Pods_ChalieVice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChalieVice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,22 +152,20 @@
 			isa = PBXGroup;
 			children = (
 				174F170B1F50651B00382C2B /* AppDelegate.swift */,
-				053CBBCF1F594256006E254A /* EyeCatchViewController.swift */,
-				174F170D1F50651B00382C2B /* TopViewController.swift */,
 				17B619FC1F514B8C004CA2FD /* ViewController.swift */,
+				174F170D1F50651B00382C2B /* TopViewController.swift */,
 				174F17591F507BEA00382C2B /* AboutViewController.swift */,
-				1793424F1F5093E8005EC910 /* EventViewController.swift */,
 				179342511F509404005EC910 /* ItemViewController.swift */,
 				05682A3C1F59AFE20025DB33 /* ItemDetailViewController.swift */,
 				05682A3A1F59AFC00025DB33 /* ItemDetailPopupViewController.swift */,
 				05682A3E1F59B6BB0025DB33 /* ItemDetailPageViewController.swift */,
-				05682A401F5A3B680025DB33 /* ItemDetailPageView1Controller.swift */,
-				05682A421F5A3B820025DB33 /* ItemDetailPageView2Controller.swift */,
-				05682A441F5A3B940025DB33 /* ItemDetailPageView3Controller.swift */,
+				05682A401F5A3B680025DB33 /* ItemDetailImagePageViewController.swift */,
+				05682A441F5A3B940025DB33 /* ItemDetailYoutubePageViewController.swift */,
 				058603061F5A592F00ED0AE8 /* ItemDetailPageView4Controller.swift */,
 				1793424D1F50934E005EC910 /* MagazineViewController.swift */,
 				05682A361F598E7A0025DB33 /* MagazineDetailViewController.swift */,
 				05682A381F5995CF0025DB33 /* MagazineDetailPopupViewController.swift */,
+				1793424F1F5093E8005EC910 /* EventViewController.swift */,
 				174F17121F50651B00382C2B /* Assets.xcassets */,
 				174F170F1F50651B00382C2B /* Main.storyboard */,
 				174F17141F50651B00382C2B /* LaunchScreen.storyboard */,
@@ -520,19 +514,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				179342501F5093E8005EC910 /* EventViewController.swift in Sources */,
-				05682A411F5A3B680025DB33 /* ItemDetailPageView1Controller.swift in Sources */,
+				05682A411F5A3B680025DB33 /* ItemDetailImagePageViewController.swift in Sources */,
 				174F175A1F507BEA00382C2B /* AboutViewController.swift in Sources */,
 				058603071F5A592F00ED0AE8 /* ItemDetailPageView4Controller.swift in Sources */,
 				05682A3D1F59AFE20025DB33 /* ItemDetailViewController.swift in Sources */,
 				174F170E1F50651B00382C2B /* TopViewController.swift in Sources */,
 				1793424E1F50934E005EC910 /* MagazineViewController.swift in Sources */,
 				05682A391F5995CF0025DB33 /* MagazineDetailPopupViewController.swift in Sources */,
-				05682A451F5A3B940025DB33 /* ItemDetailPageView3Controller.swift in Sources */,
+				05682A451F5A3B940025DB33 /* ItemDetailYoutubePageViewController.swift in Sources */,
 				17B619FD1F514B8C004CA2FD /* ViewController.swift in Sources */,
-				053CBBD01F594256006E254A /* EyeCatchViewController.swift in Sources */,
 				05682A3B1F59AFC00025DB33 /* ItemDetailPopupViewController.swift in Sources */,
 				174F170C1F50651B00382C2B /* AppDelegate.swift in Sources */,
-				05682A431F5A3B820025DB33 /* ItemDetailPageView2Controller.swift in Sources */,
 				05682A371F598E7A0025DB33 /* MagazineDetailViewController.swift in Sources */,
 				05682A3F1F59B6BB0025DB33 /* ItemDetailPageViewController.swift in Sources */,
 				179342521F509404005EC910 /* ItemViewController.swift in Sources */,

@@ -11,44 +11,45 @@ import SwiftyJSON
 
 class ItemDetailPageViewController: UIPageViewController {
   
-  public var jsonData: JSON?
+  public var jsonDetailData: JSON?
   
   private var vcs: [UIViewController]?
   private var vcsIndex = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.setViewControllers([getFirstViewController()], direction: .forward, animated: true, completion: nil)
-  }
-  
-  
-  func getFirstViewController() -> UIViewController {
-    if vcs == nil {
-      vcs = []
-      
-      let vc1: ItemDetailPageView1Controller
-      vc1 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView1") as! ItemDetailPageView1Controller
-      vc1.parentVC = self
-      vcs?.append(vc1)
-      
-      let vc2: ItemDetailPageView2Controller
-      vc2 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView2") as! ItemDetailPageView2Controller
-      vc2.parentVC = self
-      vcs?.append(vc2)
-      
-      let vc3: ItemDetailPageView3Controller
-      vc3 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView3") as! ItemDetailPageView3Controller
-      vc3.parentVC = self
-      vcs?.append(vc3)
-      
-      let vc4: ItemDetailPageView4Controller
-      vc4 = storyboard!.instantiateViewController(withIdentifier: "DetailPageView4") as! ItemDetailPageView4Controller
-      vc4.parentVC = self
-      vcs?.append(vc4)
+
+    var vcIndex: Int = 0
+    vcs = []
+    
+    let imageUrlList: [JSON] = jsonDetailData!["image_url"].array!
+    for imageUrl: JSON in imageUrlList {
+      let vc: ItemDetailImagePageViewController = storyboard!.instantiateViewController(withIdentifier: "ItemDetailImagePageViewController") as! ItemDetailImagePageViewController
+      vc.parentVC = self
+      vc.jsonDetailData = jsonDetailData
+      vc.imageUrl = imageUrl.stringValue
+      switch vcIndex {
+      case 0:
+        vc.prevButton?.isHidden = true
+        vc.prevButton?.isHidden = false
+      default:
+        vc.prevButton?.isHidden = false
+        vc.prevButton?.isHidden = false
+      }
+      vcs?.append(vc)
+      vcIndex += 1
     }
-    return vcs![0]
+    
+    let youtubeUrl: String = jsonDetailData!["youtube_url"].stringValue
+    if youtubeUrl == "" {
+      (vcs?[(vcs?.count)! - 1] as! ItemDetailImagePageViewController).nextButton?.isHidden = true
+    } else {
+      
+    }
+    
+    self.setViewControllers([(vcs?[0])!], direction: .forward, animated: true, completion: nil)
   }
-  
+
   public func nextPage(){
     
     let target = (vcs!.count - 1 > vcsIndex) ? vcsIndex + 1 : vcsIndex

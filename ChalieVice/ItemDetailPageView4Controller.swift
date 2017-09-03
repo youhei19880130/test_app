@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ItemDetailPageView4Controller: UIViewController {
   
   public var parentVC: ItemDetailPageViewController?
+  public var jsonDetailData: JSON?
   
   override func viewDidLoad() {
     super.viewDidLoad()

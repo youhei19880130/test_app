@@ -58,6 +58,7 @@ class ViewController: UIViewController, UITabBarDelegate {
     testTabBar.unselectedItemTintColor = UIColor.hexStr(hexStr: "afafaf", alpha: 1)
     /*        testTabBar.items![2].image = UIImage(named: "logo.png")!.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
      testTabBar.items![2].selectedImage = UIImage(named: "logo.png")*/
+    testTabBar.selectedItem = testTabBar.items?[0]
   }
   
   //ボタン押下時の呼び出しメソッド
