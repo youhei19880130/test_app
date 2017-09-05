@@ -296,6 +296,7 @@
 				TargetAttributes = {
 					174F17071F50651B00382C2B = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59RZCKM72E;
 						ProvisioningStyle = Automatic;
 					};
 					174F171B1F50651B00382C2B = {
@@ -686,6 +687,7 @@
 			baseConfigurationReference = 056CE948B196FC311CE4EA49 /* Pods-ChalieVice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59RZCKM72E;
 				INFOPLIST_FILE = ChalieVice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveArts.ChalieVice;
@@ -699,6 +701,7 @@
 			baseConfigurationReference = 69B15C74E236CF28FFFF0AA0 /* Pods-ChalieVice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59RZCKM72E;
 				INFOPLIST_FILE = ChalieVice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiveArts.ChalieVice;
