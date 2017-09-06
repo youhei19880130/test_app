@@ -14,6 +14,7 @@ var MyObservationContext = 0
 
 class ItemDetailViewController: UIViewController, UIPopoverPresentationControllerDelegate {
   
+  public var from: String?
   public var jsonData: JSON?
   public var jsonDetailData: JSON?
   @IBOutlet weak var nameLabel: UILabel!
@@ -22,6 +23,7 @@ class ItemDetailViewController: UIViewController, UIPopoverPresentationControlle
   @IBOutlet weak var darkBackground: UIView!
   @IBOutlet weak var webView: UIWebView!
   @IBOutlet weak var webViewHeightConstraint: NSLayoutConstraint!
+  @IBOutlet weak var backButton: UIButton!
   
   var observing = false
   
@@ -60,6 +62,12 @@ class ItemDetailViewController: UIViewController, UIPopoverPresentationControlle
     webView.loadHTMLString(htmlString + desc + detail, baseURL: nil)
     webView.scrollView.isScrollEnabled = false
     
+    switch from! {
+    case "top":
+      backButton.setTitle(" < TOP に戻る", for: .normal)
+    default:
+      backButton.setTitle(" < ITEM に戻る", for: .normal)
+    }
   }
   
   func getItem() {

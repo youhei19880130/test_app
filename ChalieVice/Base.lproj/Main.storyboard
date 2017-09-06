@@ -201,9 +201,6 @@
                                             <constraint firstAttribute="trailing" secondItem="GSN-NU-00h" secondAttribute="trailing" constant="10" id="vTN-H0-62O"/>
                                             <constraint firstItem="BMy-pk-nJX" firstAttribute="top" secondItem="BD2-hs-IHe" secondAttribute="top" id="wst-4a-Iac"/>
                                         </constraints>
-                                        <connections>
-                                            <segue destination="fql-Rx-KTJ" kind="show" identifier="showItemFromTop" id="rH6-RL-Lja"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -224,6 +221,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="uee-rY-vlR" kind="show" identifier="showMagazineFromTop" id="3Bl-yZ-xa7"/>
+                        <segue destination="fql-Rx-KTJ" kind="show" identifier="showItemFromTop" id="jCq-7f-Hac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VjT-dV-dsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -921,6 +919,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="900"/>
                     <connections>
+                        <outlet property="backButton" destination="0b2-RT-hyz" id="2SU-We-JzO"/>
                         <outlet property="darkBackground" destination="OAU-lW-DM8" id="iqF-hy-HUE"/>
                         <outlet property="imageView" destination="5Rc-uF-6Oc" id="ncB-39-def"/>
                         <outlet property="nameLabel" destination="4kb-wW-axu" id="ydL-5D-x4V"/>
@@ -1056,6 +1055,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1024" height="400"/>
                     <connections>
+                        <outlet property="nextButton" destination="JK8-dv-wdU" id="MSR-mx-kPT"/>
+                        <outlet property="prevButton" destination="Qd0-tw-ZL8" id="QXw-yl-DoL"/>
                         <outlet property="videoPlayer" destination="RR6-DL-xsL" id="oGT-8s-meE"/>
                     </connections>
                 </viewController>
@@ -1595,6 +1596,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Bl-yZ-xa7"/>
-        <segue reference="rH6-RL-Lja"/>
+        <segue reference="jCq-7f-Hac"/>
     </inferredMetricsTieBreakers>
 </document>
