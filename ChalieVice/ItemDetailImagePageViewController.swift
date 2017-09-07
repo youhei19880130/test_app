@@ -16,6 +16,9 @@ class ItemDetailImagePageViewController: UIViewController {
   public var jsonDetailData: JSON?
   @IBOutlet weak var imageView: UIImageView!
   
+  public var prevIsHidden: Bool? = false
+  public var nextIsHidden: Bool? = false
+  
   @IBOutlet var prevButton: UIButton?
   @IBOutlet var nextButton: UIButton?
   
@@ -26,6 +29,13 @@ class ItemDetailImagePageViewController: UIViewController {
       if url != "" {
         imageView.image = try! UIImage(data: Data(contentsOf: URL(string: url)!))
       }
+    }
+    
+    if prevIsHidden! {
+      prevButton?.isHidden = true
+    }
+    if nextIsHidden! {
+      nextButton?.isHidden = true
     }
   }
   

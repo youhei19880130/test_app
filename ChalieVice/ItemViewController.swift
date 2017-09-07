@@ -104,6 +104,7 @@ class ItemViewController: UIViewController, UICollectionViewDataSource, UICollec
     if segue.identifier == "showItemFromList" {
       if let dest = segue.destination as? ItemDetailViewController {
         dest.jsonData = jsonData?[selectedIndex!]
+        dest.from = "item"
       }
     }
   }

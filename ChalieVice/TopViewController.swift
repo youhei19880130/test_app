@@ -88,13 +88,22 @@ class TopViewController: UIViewController, UICollectionViewDataSource, UICollect
     let index = indexPath.row
     if index >= 0 {
       selectedIndex = index
-      performSegue(withIdentifier: "showMagazineFromTop", sender: nil)
+      if jsonData?[index]["category_name"].stringValue == "FROM CHALIE" || jsonData?[index]["category_name"].stringValue == "FROM FRIENDS" {
+        performSegue(withIdentifier: "showMagazineFromTop", sender: nil)
+      } else {
+        performSegue(withIdentifier: "showItemFromTop", sender: nil)
+      }
     }
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showMagazineFromTop" {
       if let dest = segue.destination as? MagazineDetailViewController {
+        dest.jsonData = jsonData?[selectedIndex!]
+        dest.from = "top"
+      }
+    } else if segue.identifier == "showItemFromTop" {
+      if let dest = segue.destination as? ItemDetailViewController {
         dest.jsonData = jsonData?[selectedIndex!]
         dest.from = "top"
       }
