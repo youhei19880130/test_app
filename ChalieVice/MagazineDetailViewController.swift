@@ -24,8 +24,9 @@ class MagazineDetailViewController: UIViewController, UIPopoverPresentationContr
     super.viewDidLoad()
     getItem()
 
+    var htmlTitle: String = "<h1>" + jsonDetailData!["name"].stringValue + "</h1>"
     var htmlString: String = jsonDetailData!["body"].stringValue
-    htmlString = "<style>* {font-family: \"ヒラギノ明朝 ProN W6\"!important }</style>" + htmlString
+    htmlString = "<style>* {font-family: \"ヒラギノ明朝 ProN W6\"!important }</style>" + htmlTitle + htmlString
     webView.loadHTMLString(htmlString, baseURL: nil)
     
     switch from! {

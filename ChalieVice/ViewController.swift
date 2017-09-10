@@ -60,6 +60,11 @@ class ViewController: UIViewController, UITabBarDelegate {
     /*        testTabBar.items![2].image = UIImage(named: "logo.png")!.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
      testTabBar.items![2].selectedImage = UIImage(named: "logo.png")*/
     testTabBar.selectedItem = testTabBar.items?[0]
+    
+    let bottomBorder = CALayer()
+    bottomBorder.frame = CGRect(x: 0, y: testTabBar.frame.height, width: testTabBar.frame.width, height: 0.5)
+    bottomBorder.backgroundColor = UIColor.hexStr(hexStr: "afafaf", alpha: 1).cgColor
+    testTabBar.layer.addSublayer(bottomBorder)
   }
   
   //ボタン押下時の呼び出しメソッド
